@@ -1,0 +1,27 @@
+<package>
+  <description brief="lzr_u901_node">
+
+     BEA LZR U901 laser rangefinder driver.  The driver currently
+     expects the connection with the RS485 port to be exposed through
+     some (possibly emulated) tty device node.
+
+  </description>
+  <author>Rene Wagner</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/lzr_u901_node</url>
+  <depend package="roscpp"/>
+  <depend package="sensor_msgs"/>
+  <depend package="pcl"/>
+  <depend package="pcl_ros"/>
+<!--  <depend package="eigen"/> -->
+  <depend package="timeutils"/>
+  <rosdep name="boost" />
+
+  <export>
+    <cpp cflags="-I${prefix}/include"/>
+  </export>
+
+</package>
+
+
