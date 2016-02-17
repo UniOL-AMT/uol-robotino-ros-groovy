@@ -56,7 +56,7 @@ public:
 					   const std::string &frame_id)
 		: frame_id_(frame_id),
 		  scan_pub_(nh.advertise<sensor_msgs::LaserScan>("scan", 1)),
-		  point_cloud_pub_(nh.advertise<PointCloud>(nh.resolveName("point_cloud"), 1))
+		  point_cloud_pub_(nh.advertise<PointCloud>(nh.resolveName("point_cloud_u901"), 1))
 	{}
 	
 protected:
