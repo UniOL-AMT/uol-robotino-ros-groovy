@@ -33,5 +33,5 @@ rosbuild_add_boost_directories()
 rosbuild_add_executable(lzr_u901_node src/lzr_u901_node.cc src/lzr_u901_crc.cc)
 rosbuild_link_boost(lzr_u901_node system signals)
 
-rosbuild_add_executable(lzr_u901_fake_node src/lzr_u901_fake_node.cc src/lzr_u901_crc.cc)
-rosbuild_link_boost(lzr_u901_fake_node system signals)
+#rosbuild_add_executable(lzr_u901_fake_node src/lzr_u901_fake_node.cc src/lzr_u901_crc.cc)
+#rosbuild_link_boost(lzr_u901_fake_node system signals)
